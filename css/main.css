@@ -1,0 +1,135 @@
+:root {
+    --color-blue: #208BFC;
+    --color-dark-blue: #04478D;
+    --color-black: #1A2A3E;
+    --color-white: #FAFAFA;
+  }
+  @font-face {
+    font-family: 'CoFoSans';
+    src: url(../fonts/CoFoSansRegular.ttf);
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'CoFoSans';
+    src: url(../fonts/CoFoSansMedium.ttf);
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: 'CoFoSans';
+    src: url(../fonts/CoFoSansBold.ttf);
+    font-weight: 600;
+  }
+  
+  body {
+    width: 100%;
+    font-family: 'CoFoSans';
+  }
+
+  /* ---------- header ------------ */
+
+  header {
+    position: relative;
+  }
+
+  header .contains {
+    width: 100%;
+    max-width: 1281px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+  .menu {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    width: 300px;
+    height: 28px;
+  }
+  .menu-left {
+    display: flex;
+    align-items: center;
+  }
+  .menu-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 17px;
+  }
+  .ul-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    list-style-type: none;
+  }
+  .ul-top a {
+    color: var(--color-dark-blue);
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .menu-active {
+    border-bottom: 2px solid var(--color-dark-blue);
+  }
+  .btn {
+    padding: 18px 24px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    border: none;
+    border-radius: 8px;
+  }
+  .header-box {
+    padding: 140px 0;
+  }
+  .header-box-top {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .header-title h1 {
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    max-width: 600px;
+  }
+  .header-description p {
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+    max-width: 550px;
+  }
+  .header-text p {
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .header-box-bottom {
+    padding-top: 60px;
+  }
+  .background {
+    position: relative;
+    color: var(--color-white);
+    background-image: url(../img/foto.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  } 
+  .background::after {
+    content: '';
+    position: absolute;
+    border-radius: 91px 250px 91px 91px;
+    filter: blur(222px);
+    background: var(--color-dark-blue);
+    opacity: 0.9;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+  }
