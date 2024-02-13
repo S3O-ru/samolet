@@ -8,7 +8,6 @@
         gap: 55px;
     }
     .contacts-body {
-        justify-content: left;
         row-gap: 30px;
       }
 }
