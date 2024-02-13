@@ -272,7 +272,7 @@
       flex-direction: column;
       gap: 20px;
       width: calc((100% - 22px * 3) /4);
-      min-width: 270px;
+      min-width: 260px;
       border: 1px solid var(--color-blue);
       box-shadow: -16px -15px 0px 0px rgba(32, 139, 252, 1);
     }
@@ -550,6 +550,7 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      gap: 20px;
     }
     .adress,
     .phone {
