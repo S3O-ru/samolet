@@ -1,0 +1,207 @@
+@media (max-width: 1280px) {
+    .box-plus {
+        padding-left: 20%;
+        justify-content: left;
+    }
+    .questionnaire-form-middle {
+        justify-content: left;
+        gap: 55px;
+    }
+    .contacts-body {
+        justify-content: left;
+        row-gap: 30px;
+      }
+}
+@media (max-width: 990px) {
+    /* ---------- burger ------------ */
+    .burger,
+    .burger-checkbox {
+        display: block;
+    }
+    .burger-checkbox {
+        position: absolute;
+        opacity: 0;
+        width: 40px;
+        height: 40px;
+        outline: none;
+        cursor: pointer;
+      }
+    .burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 10px;
+      }
+    .burger li{
+        list-style-type: none;
+        width: 35px;
+        height: 3px;
+        background: var(--color-blue);
+      }
+    .nav-top {
+        display: none;
+    }
+    .advantage-item:nth-child(2)::after {
+        display: none;
+      }
+    .plus-item-text {
+        font-size: 20px;
+    }
+    .footer {
+        justify-content: center;
+      }
+}
+@media (max-width: 800px) {
+    .logo {
+        width: 200px;
+        height: 18px;
+    }
+    .header-title h1 {
+        font-size: 31px;
+    }
+    .header-description p {
+        font-size: 26px;
+    }
+    .header-text p {
+        font-size: 20px;
+    }
+    .about-box-text {
+        font-size: 20px;
+    }
+    .plus-item-pic {
+        width: 70px;
+        height: 21px;
+    }
+    .questionnaire-title h3 {
+        font-size: 26px;
+    }
+    .questionnaire-form {
+        padding-top: 56px;
+        gap: 25px;
+    }
+    .questionnaire-form-top {
+        font-size: 23px;
+    }
+    .questionnaire-form-middle {
+        font-size: 20px;
+        gap: 25px;
+    }
+    .form-middle-left, 
+    .form-middle-right {
+        gap: 25px;
+    }    
+    .questionnaire input {
+        width: 25px;
+        height: 25px;
+    }
+    .reviews-item {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+@media (max-width: 720px) {
+    .btn {
+        padding: 14px 13px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .next .btn {
+        padding: 14px 52px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .advantage-item::after {
+        display: none;
+      }
+    .box-plus {
+      padding-left: 0%;
+    }
+    .plus-item-text {
+        font-size: 15px;
+    }
+    .footer-left,
+    .footer-right {
+        justify-content: center;
+        text-align: center;
+    }
+}
+@media (max-width: 500px) {
+    header .contains,
+    .partners .contains,
+    .about .contains,
+    .feedback .contains {
+        padding: 0 20px;
+    }
+    .logo {
+        width: 150px;
+        height: 13px;
+    }
+    .menu-right {
+        gap: 10px;
+    }
+    .about-header h2,
+    .partners-header h2,
+    .reviews-title h2 {
+        font-size: 37px;
+    }
+    .plus .contains,
+    .questionnaire .contains,
+    .contacts .contains {
+        padding: 0 55px;
+    }
+    .plus-item {
+        gap: 5px;
+    }
+    .plus-item-pic {
+        width: 40px;
+        height: 11px;
+    }
+    .form-middle-radio {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        min-width: 350px;
+    }
+    .next {
+        padding-right: 0px;
+    }
+    .reviews-body {
+        padding-top: 35px;
+        gap: 20px;
+    }
+    .adress-description, 
+    .phone-description {
+        font-size: 16px;
+    }
+    .feedback-title h3 {
+        font-size: 25px;
+    }
+    .feedback-form {
+        padding-top: 50px;
+        gap: 5px;
+    }
+    .feedback-form-top {
+        gap: 30px;
+        flex-direction: column;
+    }
+    .feedback-form-bottom {
+        padding-top: 70px;
+    }
+    .feedback-box {
+        padding: 123px 0;
+    } 
+}
+@media (max-width: 340px) {
+    .questionnaire-form-middle {
+        font-size: 18px;
+    }
+    .plus-item-pic {
+        display: none;
+    }
+    .plus-item-symbol {
+        display: block;
+        color: var(--color-blue);
+        font-size: 18px;
+        font-weight: 500;
+    }
+}

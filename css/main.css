@@ -32,6 +32,7 @@
     max-width: 1281px;
     margin: 0 auto;
     padding: 0 50px;
+    overflow: hidden;
   }
   .menu {
     padding-top: 20px;
@@ -69,13 +70,16 @@
   }
   .btn {
     padding: 18px 24px;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 700;
     cursor: pointer;
     color: var(--color-white);
     background-color: var(--color-blue);
     border: none;
     border-radius: 8px;
+  }
+  .btn a {
+    color: var(--color-white);
   }
   .header-box {
     padding: 140px 0;
@@ -135,6 +139,7 @@
     max-width: 1281px;
     margin: 0 auto;
     padding: 0 110px;
+    overflow: hidden;
   }
   .advantage-box {
     display: flex;
@@ -183,6 +188,7 @@
     max-width: 1281px;
     margin: 0 auto;
     padding: 0 50px;
+    overflow: hidden;
   }
   .partners-header {
     padding-top: 65px;
@@ -229,6 +235,7 @@
       max-width: 1265px;
       margin: 0 auto;
       padding: 0 50px;
+      overflow: hidden;
     }
     .about-header {
       padding-top: 50px;
@@ -327,6 +334,7 @@
       max-width: 1281px;
       margin: 0 auto;
       padding: 0 110px;
+      overflow: hidden;
     }
     .box-plus {
       padding-top: 25px;
@@ -367,6 +375,9 @@
       max-width: 451px;
       line-height: 75%;
     }
+    .plus-item-symbol {
+      display: none;
+    }
 
       /* ---------- questionnaire ------------ */
 
@@ -375,6 +386,7 @@
       max-width: 1281px;
       margin: 0 auto;
       padding: 0 110px;
+      overflow: hidden;
     }
     .questionnaire-title {
       padding-top: 65px;
@@ -445,7 +457,7 @@
     }
     .next .btn {
       padding: 18px 110px;
-      font-size: 17px;
+      font-size: 18px;
       font-weight: 700;
       cursor: pointer;
       color: var(--color-white);
@@ -486,6 +498,7 @@
       max-width: 1265px;
       margin: 0 auto;
       padding: 0 50px;
+      overflow: hidden;
     }
     .reviews-title {
       padding-top: 50px;
@@ -508,7 +521,7 @@
     .reviews-item {
       box-sizing: border-box;
       width: calc((100% - 25*2) / 3);
-      width: 329px;
+      min-width: 329px;
       aspect-ratio: 1/1;
       border: 3px solid var(--color-blue);
 
@@ -520,6 +533,7 @@
       max-width: 1265px;
       margin: 0 auto;
       padding: 0 110px;
+      overflow: hidden;
     }
     .contacts-title {
       padding-top: 50px;
@@ -532,8 +546,10 @@
       color: var(--color-blue);
     }
     .contacts-body {
+      padding-top: 20px;
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
     .adress,
     .phone {
@@ -590,6 +606,7 @@
       max-width: 1281px;
       margin: 0 auto;
       padding: 0 50px;
+      overflow: hidden;
     }
     .map {
       width: 100%;
@@ -614,3 +631,142 @@
       flex-wrap: wrap;
       gap: 5px;
     }
+    .footer-right a {
+      color: var(--color-white);
+    }
+
+     /* ---------- feedback ------------ */
+
+     .feedback {
+      position: absolute;
+      width: 100%;
+      top: -8000px;
+      left: 0;
+      right: 0;
+      box-sizing: border-box;
+      transition: .5s;
+    }
+     .feedback .contains {
+      width: 100%;
+      max-width: 1281px;
+      margin: 0 auto;
+      padding: 0 110px;
+      overflow: hidden;
+    }
+    .feedback-box {
+      padding: 125px 0;
+      position: relative;
+    }
+    .feedback-title {
+      padding-top: 30px;
+    }
+    .feedback-title h3 {
+      font-size: 36px;
+      font-weight: 500;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .feedback-form {
+      padding-top: 160px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 68px;
+    }
+    .feedback-form-top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 110px;
+    }
+    .feedback-form-top input {
+      font-size: 18px;
+      font-weight: 400;
+      padding: 18px 24px;
+      border-radius: 8px;
+      color: #D9D9D9;
+      text-align: center;
+      outline: none;
+    }
+    .feedback-form-bottom {
+      padding-top: 101px;
+      display: flex;
+      justify-content: center;
+    }
+    .feedback-form-bottom .btn {
+      padding: 18px 110px;
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+      color: var(--color-white);
+      background-color: var(--color-blue);
+      border: none;
+      border-radius: 8px;
+    }
+    .feedback-close {
+      position: absolute;
+      font-size: 36px;
+      font-weight: 500;
+      top: 10px;
+      right: 0px;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+
+    /* ---------- burger ------------ */
+
+    .burger,
+    .burger-checkbox {
+      display: none;
+    }
+    .burger-menu {
+      position: absolute;
+      width: 100%;
+      top: -8000px;
+      left: 0;
+      right: 0;
+      box-sizing: border-box;
+      transition: .5s;
+    }
+    .burger-menu .contains {
+      width: 100%;
+      max-width: 1281px;
+      margin: 0 auto;
+      padding: 0 110px;
+      overflow: hidden;
+    }
+    .burger-menu-box {
+      padding: 125px 0;
+    }
+    .burger-menu-nav {
+      display: flex;
+      justify-content: center;
+    }
+    .burger-menu .ul-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      font-size: 30px;
+      font-weight: 400;
+      z-index: 1;
+    }
+    .burger-menu-close {
+      position: absolute;
+      cursor: pointer;
+      font-size: 30px;
+      font-weight: 500;
+      top: 50px;
+      right: 50px;
+    }
+    .background-three {
+      color: var(--color-dark-blue);
+      background-color: var(--color-white);
+      opacity: 0.9;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    } 

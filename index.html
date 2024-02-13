@@ -24,7 +24,13 @@
                                 <li><a href="#">Отзывы</a></li>
                             </ul>
                         </nav>
-                        <button class="btn">Заказать звонок</button>
+                        <input class="burger-checkbox" type="checkbox"  onclick="openBurger()"> 
+                        <ul class="burger">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <button class="btn" onclick="openModal()">Заказать звонок</button>
                     </div>
                 </div>
                 <div class="header-box">
@@ -40,7 +46,7 @@
                         </div>
                     </div>
                     <div class="header-box-bottom">
-                        <button class="btn">Подробнее</button>
+                        <button class="btn"><a href="#quiz">Подробнее</a></button>
                     </div>
                 </div>
             </div>
@@ -159,12 +165,14 @@
                     <div class="plus-item-pic">
                         <div class="plus-svg"></div>
                     </div>
+                    <div class="plus-item-symbol">+</div>
                     <div class="plus-item-text">Юридическое сопровождение</div>
                 </div>
                 <div class="plus-item">
                     <div class="plus-item-pic">
                         <div class="plus-svg"></div>
                     </div>
+                    <div class="plus-item-symbol">+</div>
                     <div class="plus-item-text">Дизайн-проекты и ремонт</div>
                 </div>
             </div>
@@ -173,12 +181,14 @@
                     <div class="plus-item-pic">
                         <div class="plus-svg"></div>
                     </div>
+                    <div class="plus-item-symbol">+</div>
                     <div class="plus-item-text">Мебель и переезд</div>
                 </div>
                 <div class="plus-item">
                     <div class="plus-item-pic">
                         <div class="plus-svg"></div>
                     </div>
+                    <div class="plus-item-symbol">+</div>
                     <div class="plus-item-text">Аренда и клининг</div>
                 </div>
             </div>
@@ -190,7 +200,7 @@
         <div class="contains">
             <div class="questionnaire-box">
                 <div class="questionnaire-title">
-                    <h3>Узнайте как купить квартиру дешевле чем у застройщика</h3>
+                    <h3><a href="#" name="quiz"></a>Узнайте как купить квартиру дешевле чем у застройщика</h3>
                 </div>
                 <div class="questionnaire-form">
                     <div class="questionnaire-form-top">Форма оплаты</div>
@@ -288,5 +298,56 @@
         </div>
     </div>
 </footer>
+<div class="feedback" id="modal">
+    <div class="background-two">
+        <div class="contains">
+            <div class="feedback-box">
+                <div class="feedback-close" onclick="closeModal()">X</div>
+                <div class="feedback-title">
+                    <h3>Узнайте как купить квартиру дешевле чем у застройщика</h3>
+                </div>
+                <div class="feedback-form">
+                    <div class="feedback-form-top">
+                        <input type="text" name="name" placeholder="Имя">
+                        <input type="tel" name="name" placeholder="Телефон">
+                    </div>
+                    <div class="feedback-form-bottom">
+                        <button class="btn" onclick="closeModal()">Узнать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="burger-menu" id="modal-burger">
+    <div class="background-three">
+        <div class="contains">
+            <div class="burger-menu-box">
+                <div class="burger-menu-close" onclick="closeBurger()">X</div>
+                <nav class="burger-menu-nav">
+                    <ul class="ul-top">
+                        <li><a href="#" class="menu-active">О компании</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function openModal() {
+        document.getElementById("modal").style.top = "0%";
+        }
+    function closeModal() {
+        document.getElementById("modal").style.top = "-8000px";
+        }
+        function openBurger() {
+        document.getElementById("modal-burger").style.top = "0%";
+        }
+    function closeBurger() {
+        document.getElementById("modal-burger").style.top = "-8000px";
+        }
+</script>
 </body>
 </html>
