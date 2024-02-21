@@ -4,7 +4,7 @@
         justify-content: left;
     }
     .questionnaire-form-middle {
-        justify-content: left;
+        justify-content: space-between;
         gap: 55px;
     }
     .contacts-body {
@@ -89,10 +89,23 @@
     .form-middle-right {
         gap: 25px;
     }    
-    .questionnaire input {
+    .questionnaire input.radio {
         width: 25px;
         height: 25px;
     }
+    .questionnaire-feedback-form {
+        padding-top: 56px;
+        gap: 25px;
+    }
+    .questionnaire-feedback-form-top {
+        font-size: 23px;
+        flex-wrap: wrap;
+        gap: 33px;
+    }
+    .questionnaire-feedback-form-middle {
+        font-size: 20px;
+        gap: 25px;
+    }  
     .reviews-item {
         width: 100%;
         max-width: 500px;
@@ -106,6 +119,14 @@
     }
     .next .btn {
         padding: 14px 52px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .questionnaire-form-next {
+        padding-right: 0;
+    }
+    .questionnaire-form-next .btn {
+        padding: 14px 42px;
         font-size: 14px;
         font-weight: 400;
     }
