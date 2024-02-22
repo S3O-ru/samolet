@@ -397,16 +397,23 @@
       text-align: center;
       text-transform: uppercase;
     }
+
+    /*--------КВИЗ СО СЛАЙДАМИ--------*/
+
     .questionnaire-form-box {
       display: flex;
-      overflow: hidden;
-    } 
+      /* width: 10000px; */
+    }
     .questionnaire-form {
+      min-width: 100%;
       padding-top: 105px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       gap: 68px;
+    }
+    .questionnaire-form:nth-child(2) {
+      padding-left: 500px;
     }
     .questionnaire-form-top {
       display: flex;
